@@ -4,4 +4,18 @@
   "repository": "https://github.com/Ze-Falcon/aws-edu-bypass",
   "logo": "https://eduemailshop.com/wp-content/uploads/2021/02/AWS-Educate.png",
   "keywords": ["AWS", "AWS Educate", "Bypass"]
+  "env": {
+    "TOTAL_QTN": {
+      "description": "Total Number Of Accounts To Bypass Session.",
+      "generator": "secret"
+    },
+    "ACC_NO_1": {
+      "description": "The Email & Password Of Account No 1",
+      "value": "5"
+    },
+    "ACC_NO_2": {
+      "description": "The Email & Password Of Account No 2",
+      "value": "5"
+    }
+  }
 }
