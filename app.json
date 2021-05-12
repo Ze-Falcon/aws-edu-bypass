@@ -11,16 +11,16 @@
    "env":{
       "TOTAL_QTN":{
          "description":"Total Number Of Accounts To Bypass Session.",
-         "value":"email:password"
+         "value":"2"
       },
       "ACC_NO_1":{
          "description":"The Email & Password Of Account No 1",
-         "value":"5"
+         "value":"email:password"
       },
       "ACC_NO_2":{
-         "required":"false",
-         "description":"The Email & Password Of Account No 2",
-         "value":"5"
+         "required":false,
+         "description":"The Email & Password Of Account No 2 . To Add More Accounts Change The Value In [TOTAL_QTN] to match The Number Of Accounts You Have And Add Key ACC_NO_3 or ACC_NO_4 In This Format ",
+         "value":"email:password"
       },
       "CHROMEDRIVER_PATH":{
          "description":"Enviromental Variable [DONT TOUCH]",
