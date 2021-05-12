@@ -2,10 +2,12 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 from dotenv import dotenv_values as secret
+import os
+from os import environ
 
 
-env = secret('config.env')
-amount = int(env['TOTAL_QTN'])
+#env = secret('config.env')
+amount = int(environ['TOTAL_QTN'])
 
 
 def start_session(email, password):
@@ -41,7 +43,7 @@ def start_session(email, password):
     driver.close()
 
 for i in range(1,amount+1):
-    acc = (env[f"ACC_NO_{i}"]).split(":")
+    acc = (environ[f"ACC_NO_{i}"]).split(":")
     email = acc[0]
     password = acc[1]
     start_session(email, password)    
