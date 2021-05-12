@@ -3,7 +3,7 @@
   "description": "App To Bypass Session Limitation Of Aws Educate",
   "repository": "https://github.com/Ze-Falcon/aws-edu-bypass",
   "logo": "https://eduemailshop.com/wp-content/uploads/2021/02/AWS-Educate.png",
-  "keywords": ["AWS", "AWS Educate", "Bypass"]
+  "keywords": ["AWS", "AWS Educate", "Bypass"],
   "env": {
     "TOTAL_QTN": {
       "description": "Total Number Of Accounts To Bypass Session.",
