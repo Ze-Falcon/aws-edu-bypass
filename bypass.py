@@ -35,7 +35,7 @@ def start_session(email, password):
     sec_acc_key = (to_parse_text[1].split('='))[0] + '="' + (to_parse_text[1].split('='))[1]  + '"'
     sec_acc_token = (to_parse_text[2].split('='))[0] + '="' + (to_parse_text[2].split('='))[1]  + '"'
     to_print = acc_key + ',\n' + sec_acc_key + ',\n' + sec_acc_token + ',\n'
-    #print(to_print)
+    print(to_print)
     driver.close()
 
 for i in range(1,amount+1):
