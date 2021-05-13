@@ -2,7 +2,7 @@
    "name":"AWS Educate Bypass",
    "description":"App To Bypass Session Limitation Of Aws Educate",
    "repository":"https://github.com/Ze-Falcon/aws-edu-bypass",
-   "logo":"https://eduemailshop.com/wp-content/uploads/2021/02/AWS-Educate.png",
+   "logo":"https://de8964361f4bb909de8d-fe8b524ce0801bda0a4b2a48b0c06837.ssl.cf4.rackcdn.com/aKP5jfzpYGi6onA5crCDocysvw9ggtPgErjm5QPWLo6EPoGUVyiYziQKc42nuiDH.1532667105/AWSLogocloud.png",
    "keywords":[
       "AWS",
       "AWS Educate",
@@ -31,13 +31,15 @@
          "value":"/app/.chromedriver/bin/chromedriver"
       }
    },
-   "image":"heroku/python",
    "buildpacks":[
       {
          "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
       },
       {
          "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+      },
+      {
+         "url":"heroku/python"
       }
    ]
 }

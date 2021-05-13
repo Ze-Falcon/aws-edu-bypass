@@ -1,12 +1,10 @@
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.keys import Keys
-from dotenv import dotenv_values as secret
 from decouple import config
 
 
 amount = int(config("TOTAL_QTN"))
-
 
 def start_session(email, password):
     print(f"Bypassing Account No {i}")
