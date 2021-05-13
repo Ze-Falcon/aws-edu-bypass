@@ -24,22 +24,14 @@ def start_session(email, password):
     sleep(8)
     get_details_button = driver.find_element_by_id("showawsdetail")
     get_details_button.click()
-    sleep(4)
-    show_details_button = driver.find_element_by_id("clikeyboxbtn")
-    show_details_button.click()
-    sleep(2)
-    text_details = driver.find_element_by_id("clikeybox")
-    to_parse_text = text_details.text
-    to_parse_text = ((to_parse_text.strip("Copy and paste the following into ~/.aws/credentials")).split("\n[default]\n")[1]).split('\n')
-    acc_key = (to_parse_text[0].split('='))[0] + '="' + (to_parse_text[0].split('='))[1]  + '"'
-    sec_acc_key = (to_parse_text[1].split('='))[0] + '="' + (to_parse_text[1].split('='))[1]  + '"'
-    sec_acc_token = (to_parse_text[2].split('='))[0] + '="' + (to_parse_text[2].split('='))[1]  + '"'
-    to_print = acc_key + ',\n' + sec_acc_key + ',\n' + sec_acc_token + ',\n'
-    print(to_print)
+    if get_details_button:
+        print(f"Bypassed Account No . {i}")
+    else:
+        print(f"Failed To Bypass Account No {i} , {email}:{password}")
     driver.close()
 
 for i in range(1,amount+1):
     acc = (config(f"ACC_NO_{i}")).split(":")
     email = acc[0]
     password = acc[1]
-    start_session(email, password)    
+    start_session(email, password)
